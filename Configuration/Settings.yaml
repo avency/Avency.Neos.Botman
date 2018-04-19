@@ -1,0 +1,21 @@
+Avency:
+  Neos:
+    Botman:
+      driverClassNames:
+        'BotMan\Drivers\Web\WebDriver': true
+        'Gerdemann\BotMan\Drivers\RocketChat\RocketChatDriver': true
+      driverConfig:
+        web:
+          matchingData:
+            driver: web
+        rocketchat:
+          outgoingToken: 'MY OUTGOING TOKEN'
+          incomingEndpoint: 'MY INCOMING ENDPOINT WITH TOKEN'
+          matchingKeys: ['user_id', 'user_name', 'channel_id', 'channel_name', 'message_id', 'text', 'timestamp', 'bot']
+      dialogflowToken: 'MY DIALOGFLOW TOKEN'
+Neos:
+  Flow:
+    mvc:
+      routes:
+        'Avency.Neos.Botman':
+          position: 'before Neos.Neos'

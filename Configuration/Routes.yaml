@@ -1,0 +1,9 @@
+-
+  name:  'Botman'
+  uriPattern: 'botman'
+  defaults:
+    '@package':    'Avency.Neos.Botman'
+    '@controller': 'Botman'
+    '@action':     'index'
+    '@format':     'html'
+  appendExceedingArguments: TRUE

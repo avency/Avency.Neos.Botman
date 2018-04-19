@@ -9,8 +9,8 @@
 
     "neos/neos": "*",
     "botman/botman": "^2.3",
-    "filippo-toso/driver-rocket-chat": "^1.0",
-    "botman/driver-web": "^1.5"
+    "botman/driver-web": "^1.5",
+    "gerdemann/driver-rocket-chat": "dev-master"
   },
   "autoload": {
     "psr-4": {

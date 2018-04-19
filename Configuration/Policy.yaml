@@ -1,0 +1,10 @@
+privilegeTargets:
+  'Neos\Flow\Security\Authorization\Privilege\Method\MethodPrivilege':
+    'Avency.Neos.Botman:AllBotmanMethods':
+      matcher: 'within(Avency\Neos\Botman\Controller\BotmanController) && method(public .*->(?!initialize).*Action())'
+roles:
+  'Neos.Flow:Everybody':
+    privileges:
+      -
+        privilegeTarget: 'Avency.Neos.Botman:AllBotmanMethods'
+        permission: GRANT
