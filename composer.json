@@ -1,0 +1,20 @@
+{
+  "name": "avency/neos-botman",
+  "type": "neos-package",
+  "description": "A Neos package for Botman",
+  "homepage": "https://www.avency.de",
+  "license": ["MIT"],
+  "require": {
+    "php": "~7.1",
+
+    "neos/neos": "*",
+    "botman/botman": "^2.3",
+    "filippo-toso/driver-rocket-chat": "^1.0",
+    "botman/driver-web": "^1.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Avency\\Neos\\Botman\\": "Classes"
+    }
+  }
+}
